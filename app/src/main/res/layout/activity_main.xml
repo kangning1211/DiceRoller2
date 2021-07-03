@@ -6,24 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/Result_TextView"
+    <ImageView
+        android:id="@+id/dice_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="34sp"
+        android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty_dice"
+        tools:ignore="MissingConstraints,VectorDrawableCompat"
+        tools:src="@drawable/dice_1" />
 
     <Button
-        android:id="@+id/Roll_Button"
+        android:id="@+id/roll_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Roll"
-        app:layout_constraintEnd_toEndOf="@+id/Result_TextView"
-        app:layout_constraintStart_toStartOf="@+id/Result_TextView"
-        app:layout_constraintTop_toBottomOf="@+id/Result_TextView" />
+        app:layout_constraintEnd_toEndOf="@+id/dice_image"
+        app:layout_constraintStart_toStartOf="@+id/dice_image"
+        app:layout_constraintTop_toBottomOf="@+id/dice_image" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.diceroller
+package com.example.diceRoller2
 
 import org.junit.Test
 
